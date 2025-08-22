@@ -57,14 +57,15 @@
 
     /* Larger screens: 660x620px */
     @media (min-width: 1024px) {
+  html { font-size: 125%; }
       svg#globe {
-        width: 660px;
-        height: 620px;
-        margin-top: -85px;
+        width: 54.25rem;   /* 660px -> 41.25rem -> 825px @125% */
+        height: 42.75rem;  /* 620px -> 38.75rem -> 775px @125% */
+        margin-top: -5.3125rem; /* -85px -> -5.3125rem -> -106.25px @125% */
       }
 
       footer {
-        margin-top: -65px !important;
+        margin-top: -4.0625rem !important; /* -65px -> -4.0625rem -> -81.25px */
       }
     }
 
@@ -233,7 +234,7 @@
 
   <footer class="mt-12 text-center text-gray-500">
     <p>Hosted at <a href="https://github.com/apescasio" class="hover:text-blue-400 underline">mundo.apescasio.fr</a></p>
-    <p class="text-center text-sm lg:text-base">
+   <p class="text-center text-sm lg:text-base">
       &copy; <span id="current-year"></span> Aaron (Iso) Pescasio /
       <a href="https://apescasio.fr/" target="_blank" class="hover:text-blue-400 underline">
         apescasio.fr
